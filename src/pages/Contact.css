@@ -1,0 +1,281 @@
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-section h2 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.lab-subtitle {
+  color: var(--text-light);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.info-content {
+  flex: 1;
+}
+
+.info-content h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.info-content p {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.info-content a {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.info-content a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.social-links a {
+  color: var(--primary-color);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--secondary-color);
+  padding-left: 0.5rem;
+}
+
+.hours-section {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.hours-section h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.hours-content p {
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.hours-note {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-light);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.contact-map h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.map-container {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.map-placeholder {
+  height: 350px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.map-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.map-placeholder p {
+  color: var(--text-color);
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+.map-coordinates {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  font-weight: normal !important;
+}
+
+.map-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.map-link:hover {
+  color: var(--secondary-color);
+}
+
+.directions {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.directions h4 {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.direction-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  align-items: flex-start;
+}
+
+.direction-item:last-child {
+  margin-bottom: 0;
+}
+
+.direction-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.direction-item div {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.direction-item strong {
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.inquiry-section {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+}
+
+.inquiry-section h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.inquiry-section p {
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  font-size: 1.05rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inquiry-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.inquiry-section .btn-primary {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.inquiry-section .btn-secondary {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 1024px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .map-placeholder {
+    height: 300px;
+  }
+  
+  .inquiry-section {
+    padding: 2rem;
+  }
+  
+  .inquiry-buttons {
+    flex-direction: column;
+  }
+  
+  .inquiry-buttons .btn {
+    width: 100%;
+  }
+}
+

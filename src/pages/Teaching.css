@@ -1,0 +1,228 @@
+.philosophy-section {
+  margin-bottom: 4rem;
+}
+
+.philosophy-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--primary-color);
+}
+
+.philosophy-card p {
+  color: var(--text-color);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.philosophy-card p:last-child {
+  margin-bottom: 0;
+}
+
+.courses-section {
+  margin-bottom: 4rem;
+}
+
+.courses-section h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.course-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  border-top: 3px solid var(--primary-color);
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.course-code {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.course-semester {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.course-card h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.course-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.materials-section {
+  margin-bottom: 4rem;
+}
+
+.materials-section h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.materials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.material-card {
+  display: flex;
+  gap: 1.5rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.material-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateX(5px);
+}
+
+.material-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+.material-content {
+  flex: 1;
+}
+
+.material-content h3 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.material-type {
+  display: inline-block;
+  background-color: var(--bg-light);
+  color: var(--primary-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.material-content p {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-top: 0.75rem;
+}
+
+.prospective-section h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.prospective-card {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  padding: 3rem;
+  border-radius: 12px;
+  color: white;
+}
+
+.prospective-card h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.prospective-card > p {
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  font-size: 1.05rem;
+}
+
+.requirements {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.requirements h4 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.requirements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.requirements li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.requirements li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.prospective-card .btn-primary {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .material-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .prospective-card {
+    padding: 2rem;
+  }
+}
+
